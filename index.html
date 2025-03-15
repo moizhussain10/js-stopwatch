@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        .main {
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            padding: 70px;
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+            box-shadow: 10px 10px 10px aquamarine;
+            animation: float 4s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translatey(0);
+            }
+
+            50% {
+                transform: translatey(1rem);
+            }
+
+            100% {
+                transform: translatey(0);
+            }
+        }
+        h1{
+            font-size: 50px;
+            font-family: sans-serif;
+        }
+
+        h2 {
+            display: inline-block;
+            width: 50px;
+            font-size: 40px;
+            padding: 0 25px;
+            font-family: sans-serif;
+
+        }
+
+        button {
+            background-color: rgb(0, 130, 170);
+            width: 70px;
+            height: 50px;
+            width: 100px;
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h1>Stop Watch</h1>
+        <h2 id="min">0</h2>
+        <h2 id="sec">0</h2>
+        <h2 id="msec">0</h2>
+        <br><br>
+        <button id="btn" onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
